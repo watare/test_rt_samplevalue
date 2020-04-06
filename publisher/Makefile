@@ -9,8 +9,6 @@ INCLUDE = -I../inc
 
 
 all: $(EXEC)
-$(EXEC): sv_publisher_example_v2.c
-	$(CC) $(INCLUDE) sv_publisher_example_v2.c -o $(EXEC)  $(CFLAGS) $(LIBPATH) $(LIB) 
+$(EXEC): src/sv_publisher_example_v2.c
+	$(CC) $(INCLUDE) src/sv_publisher_example_v2.c -o $(EXEC)  $(CFLAGS) $(LIBPATH) $(LIB) 
 
-clean:
-	rm *.o

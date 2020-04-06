@@ -9,19 +9,19 @@ EXEC = sv_subscriber
 INCLUDE = -I../inc
 
 all: $(EXEC)
-$(EXEC): sv_subscriber_v2.c
-#$(EXEC): sv_subscriber_phasor_extract.c
-			$(CC) $(INCLUDE)  sv_subscriber_v2.c -o $(EXEC) $(CFLAGS) $(LIBPATH) $(LIB)
-#			$(CC) $(INCLUDE) sv_subscriber_phasor_extract.c -o $(EXEC) $(CFLAGS) $(LIBPATH) $(LIB)
+$(EXEC): src/sv_subscriber_v2.c
+#$(EXEC): src/sv_subscriber_phasor_extract.c
+			$(CC) $(INCLUDE)  src/sv_subscriber_v2.c -o $(EXEC) $(CFLAGS) $(LIBPATH) $(LIB)
+#			$(CC) $(INCLUDE) src/sv_subscriber_phasor_extract.c -o $(EXEC) $(CFLAGS) $(LIBPATH) $(LIB)
 
 
 #only goose publisher
 
-#$(EXEC): goose_publisher.c
-#				$(CC) $(INCLUDE)  goose_publisher.c -o $(EXEC) $(CFLAGS) $(LIBPATH) $(LIB)
+#$(EXEC): src/goose_publisher.c
+#				$(CC) $(INCLUDE)  src/goose_publisher.c -o $(EXEC) $(CFLAGS) $(LIBPATH) $(LIB)
 
 clean:
-	rm *.o
+	rm  -rf obj/
 
 
 
