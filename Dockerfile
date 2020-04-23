@@ -6,7 +6,8 @@ WORKDIR /run
 RUN mkdir -p /run
 RUN mkdir -p /app
 RUN apt-get update -y && apt-get install -y python3
-
+RUN apt-get install -y python3-pip
+RUN pip3 install toml
 #
 # Copy the file from your host to your current location.
 COPY publisher/sv_publisher /app
