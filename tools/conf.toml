@@ -4,9 +4,9 @@ type='publisher'
 nic='eth0'
 appid='0x4000'
 logpath='/run/log.csv'
-duration=10
+duration=1
 #a remplir uniquement pour un publisher
-iedname='Merging_Unit_1'
+iedname='MU_POSTE_1'
 
 [[ied]]
 id='p2'
@@ -14,9 +14,9 @@ type='publisher'
 nic='eth0'
 appid='0x4001'
 logpath='/run/log.csv'
-duration=10
+duration=1
 #a remplir uniquement pour un publisher
-iedname='Merging_Unit_2'
+iedname='MU_POSTE_2'
 
 [[ied]]
 id='p3'
@@ -24,9 +24,9 @@ type='publisher'
 nic='eth0'
 appid='0x4002'
 logpath='/run/log.csv'
-duration=10
+duration=1
 #a remplir uniquement pour un publisher
-iedname='Merging_Unit_3'
+iedname='MU_POSTE_3'
 
 [[ied]]
 id='p4'
@@ -34,6 +34,14 @@ type='publisher'
 nic='eth0'
 appid='0x4003'
 logpath='/run/log.csv'
-duration=10
+duration=1
 #a remplir uniquement pour un publisher
-iedname='Merging_Unit_4'
+iedname='MU_POSTE_4'
+
+[[ied]]
+id='s1'
+type='subscriber'
+nic='eth0'
+appid='0x4000'
+logpath='/run/log.csv'
+duration=1
