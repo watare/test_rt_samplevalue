@@ -1,0 +1,39 @@
+[[ied]]
+id='p1'
+type='publisher'
+nic='eth0'
+appid='0x4000'
+logpath='/run/log.csv'
+duration=10
+#a remplir uniquement pour un publisher
+iedname='Merging_Unit_1'
+
+[[ied]]
+id='p2'
+type='publisher'
+nic='eth0'
+appid='0x4001'
+logpath='/run/log.csv'
+duration=10
+#a remplir uniquement pour un publisher
+iedname='Merging_Unit_2'
+
+[[ied]]
+id='p3'
+type='publisher'
+nic='eth0'
+appid='0x4002'
+logpath='/run/log.csv'
+duration=10
+#a remplir uniquement pour un publisher
+iedname='Merging_Unit_3'
+
+[[ied]]
+id='p4'
+type='publisher'
+nic='eth0'
+appid='0x4003'
+logpath='/run/log.csv'
+duration=10
+#a remplir uniquement pour un publisher
+iedname='Merging_Unit_4'
